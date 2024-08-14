@@ -1,0 +1,211 @@
+/* css to reset all the designs */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* css to reset all the designs */
+
+/* add styles on elements */
+
+.header {
+    border-bottom: 1px solid #E2E8F0;
+    background:linear-gradient(45deg,deeppink,navy);
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+}
+nav img{
+    width: 10rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    /* background-color: #101010; */
+    background-color: #fff;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link {
+    /* font-size: 1.6rem; */
+    font-size: 2rem;
+    font-weight: 400;
+    /* color: #475569; */
+    color: #fff;
+    /* change */
+}
+
+.nav-link:hover {
+    background-color: aliceblue;
+    color: black;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.nav-logo {
+    /* font-size: 2.1rem; */
+    font-size: 3rem;
+    font-weight: 500;
+    /* color: #482ff7; */
+    color: #fff;
+}
+main {
+    background-color: aliceblue;
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+main .content {
+    font-size: 2.5rem;
+    flex: 1 1 45%;
+    margin-bottom: 2rem;
+}
+
+main .img img {
+    width: 100%;
+    max-width: 50rem;
+    height: auto;
+    flex: 1 1 45%;
+}
+
+#loginbtn {
+    background-color: navy;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .content {
+        text-align: center;
+        font-size: 2rem;
+
+    }
+
+    main .img img {
+        width: 80%;
+        max-width: 30rem;
+        margin-top: 2rem;
+    }
+
+    #loginbtn {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        padding: 8px 16px;
+    }
+}
+footer{
+    display: flex;
+    background-color: black;
+    text-align: center;
+    padding: 16px;
+    color: white;
+}
+footer h2{
+   margin: 0 auto;
+}
+span a{
+    color: orangered;
+}
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        /* background-color: #fff; */
+        background-color: #222;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+        color: #fff;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+/* add styles on elements */

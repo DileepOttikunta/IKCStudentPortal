@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: black;
+    color: aliceblue;
+    padding: 16px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.card i {
+    font-size: 2.5rem;
+    color: #6a11cb;
+    transition: transform 0.3s ease;
+}
+
+.card:hover i {
+    transform: scale(1.2);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+}

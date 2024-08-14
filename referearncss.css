@@ -1,0 +1,90 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+header {
+    background:aliceblue;
+    color:navy;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.intro-img {
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.intro-img:hover {
+    transform: scale(1.05);
+}
+
+.intro-text h2 {
+    margin-bottom: 10px;
+}
+
+.steps {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.steps h2 {
+    margin-bottom: 20px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.step-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.step-icon:hover {
+    transform: rotate(360deg);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+#introimg{
+    width: 10rem;
+    border-radius: 50%;
+}
