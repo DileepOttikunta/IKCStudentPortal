@@ -11,6 +11,7 @@ const web = [
     { username: "muni sekhar", password: "Abhi" },
     { username: "kethan kumar", password: "kethan" },
     { username: "Hema", password: "12345054" },
+     { username: " Prathima", password: "4823" },
     { username: "dweb", password: "dweb" }
 ];
 
