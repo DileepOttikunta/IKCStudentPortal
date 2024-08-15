@@ -1,20 +1,17 @@
 // Pre-defined user login details
 const java = [
     { username: "seshu", password: "1234" },
-    { username: "user2", password: "pass2" },
-    { username: "user3", password: "pass3" },
-    { username: "user4", password: "pass4" },
-    { username: "user5", password: "pass5" },
-    { username: "user6", password: "pass6" }
+    { username: "djava", password: "djava" }
+  
 ];
 
 const web = [
     { username: "bhanu", password: "4321" },
-    { username: "user2", password: "pass2" },
-    { username: "user3", password: "pass3" },
-    { username: "user4", password: "pass4" },
-    { username: "user5", password: "pass5" },
-    { username: "user6", password: "pass6" }
+    { username: "Ganesh", password: "Gani" },
+    { username: "muni sekhar", password: "Abhi" },
+    { username: "kethan kumar", password: "kethan" },
+    { username: "Hema", password: "12345054" },
+    { username: "dweb", password: "dweb" }
 ];
 
 document.querySelector('.login-form').addEventListener('submit', function (e) {
