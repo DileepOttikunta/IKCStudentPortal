@@ -6,6 +6,7 @@ const java = [
 ];
 const python = [
     { username: "ikc", password: "ikc" },
+    { username: "durga", password: "durga" },
     { username: "dpython", password: "dpython" }
   
 ];
