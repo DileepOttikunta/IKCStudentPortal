@@ -34,10 +34,15 @@ document.querySelector('.login-form').addEventListener('submit', function (e) {
     // Check if the entered username and password match any of the users in the 'web' array
     const webUser = web.find(user => user.username === usernameInput && user.password === passwordInput);
 
-    if (javaUser || javaSepUser) {
+    if (javaUser) {
         // Redirect to java.html if credentials match in the 'java' or 'javaSep' array
         window.location.href = "java.html";
-    } else if (webUser) {
+    } 
+    else if (javaSepUser) {
+        // Redirect to web.html if credentials match in the 'web' array
+        window.location.href = "javasep.html";
+    }
+    else if (webUser) {
         // Redirect to web.html if credentials match in the 'web' array
         window.location.href = "web.html";
     } else {
