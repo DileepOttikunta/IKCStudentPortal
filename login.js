@@ -4,6 +4,12 @@ const java = [
     { username: "djava", password: "djava" }
   
 ];
+
+const javaSep = [
+    {username: "Peruvaila
+", password: "Kiran@1507" }
+    
+];
 const python = [
     { username: "ikc", password: "ikc" },
     { username: "durga", password: "durga123" },
@@ -38,15 +44,17 @@ document.querySelector('.login-form').addEventListener('submit', function (e) {
     // Check if the entered username and password match any of the users in the 'web' array
     const webUser = web.find(user => user.username === usernameInput && user.password === passwordInput);
 
+     const JavaSepUser = javaSep.find(user => user.username === usernameInput && user.password === passwordInput);
+
     if (javaUser) {
         // Redirect to java.html if credentials match in the 'java' array
         window.location.href = "java.html";
     } else if (webUser) {
         // Redirect to web.html if credentials match in the 'web' array
         window.location.href = "web.html";
-    } else if (pythonUser) {
+    } else if (JavaSepUser) {
         // Redirect to web.html if credentials match in the 'python' array
-        window.location.href = "python.html";
+        window.location.href = "javasep.html";
     }else {
         // Alert if credentials are incorrect
         alert('Invalid username or password!');
