@@ -10,12 +10,7 @@ const javaSep = [
 ", password: "Kiran@1507" }
     
 ];
-const python = [
-    { username: "ikc", password: "ikc" },
-    { username: "durga", password: "durga123" },
-    { username: "dpython", password: "dpython" }
-  
-];
+
 
 const web = [
     { username: "bhanu", password: "4321" },
